@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B249B50EEE18971A51523DE /* Pods_SladerChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6833BCFC22B775338D68D3B1 /* Pods_SladerChallenge.framework */; };
+		30027E1FE28FB93D900D99D9 /* Pods_SladerChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2836143EC5EA49A72F0312D4 /* Pods_SladerChallengeTests.framework */; };
+		B3BE8D4C20F02C9500182BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D4B20F02C9500182BB4 /* AppDelegate.swift */; };
+		B3BE8D4E20F02C9500182BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D4D20F02C9500182BB4 /* ViewController.swift */; };
+		B3BE8D5120F02C9500182BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D4F20F02C9500182BB4 /* Main.storyboard */; };
+		B3BE8D5320F02C9500182BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D5220F02C9500182BB4 /* Assets.xcassets */; };
+		B3BE8D5620F02C9500182BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D5420F02C9500182BB4 /* LaunchScreen.storyboard */; };
+		B3BE8D6120F02C9500182BB4 /* SladerChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D6020F02C9500182BB4 /* SladerChallengeTests.swift */; };
+		B3BE8D6E20F1236A00182BB4 /* example_books.json in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D6D20F1236A00182BB4 /* example_books.json */; };
+		B3DEF81020F15641004D5AD5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEF80F20F15641004D5AD5 /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3BE8D5D20F02C9500182BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3BE8D4020F02C9500182BB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3BE8D4720F02C9500182BB4;
+			remoteInfo = SladerChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2836143EC5EA49A72F0312D4 /* Pods_SladerChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SladerChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A088BB51D91FA9A493C2A03 /* Pods-SladerChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallenge/Pods-SladerChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		6833BCFC22B775338D68D3B1 /* Pods_SladerChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SladerChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BE8D4820F02C9500182BB4 /* SladerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SladerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BE8D4B20F02C9500182BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3BE8D4D20F02C9500182BB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3BE8D5020F02C9500182BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3BE8D5220F02C9500182BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3BE8D5520F02C9500182BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3BE8D5720F02C9500182BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3BE8D5C20F02C9500182BB4 /* SladerChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SladerChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BE8D6020F02C9500182BB4 /* SladerChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SladerChallengeTests.swift; sourceTree = "<group>"; };
+		B3BE8D6220F02C9500182BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3BE8D6D20F1236A00182BB4 /* example_books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_books.json; sourceTree = "<group>"; };
+		B3DEF80F20F15641004D5AD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../../../../../GradientView.swift; sourceTree = "<group>"; };
+		B7150DF6FD284D294E202C08 /* Pods-SladerChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallenge/Pods-SladerChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		CFB2911B092C88AE92CA92D4 /* Pods-SladerChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED155D4B4ADC35715B2ED764 /* Pods-SladerChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3BE8D4520F02C9500182BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B249B50EEE18971A51523DE /* Pods_SladerChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BE8D5920F02C9500182BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30027E1FE28FB93D900D99D9 /* Pods_SladerChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		309B8E3040400C6916E5210A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A088BB51D91FA9A493C2A03 /* Pods-SladerChallenge.debug.xcconfig */,
+				B7150DF6FD284D294E202C08 /* Pods-SladerChallenge.release.xcconfig */,
+				ED155D4B4ADC35715B2ED764 /* Pods-SladerChallengeTests.debug.xcconfig */,
+				CFB2911B092C88AE92CA92D4 /* Pods-SladerChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		422B6B038355DD20CE0F49B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6833BCFC22B775338D68D3B1 /* Pods_SladerChallenge.framework */,
+				2836143EC5EA49A72F0312D4 /* Pods_SladerChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3BE8D3F20F02C9500182BB4 = {
+			isa = PBXGroup;
+			children = (
+				B3BE8D4A20F02C9500182BB4 /* SladerChallenge */,
+				B3BE8D5F20F02C9500182BB4 /* SladerChallengeTests */,
+				B3BE8D4920F02C9500182BB4 /* Products */,
+				309B8E3040400C6916E5210A /* Pods */,
+				422B6B038355DD20CE0F49B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3BE8D4920F02C9500182BB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE8D4820F02C9500182BB4 /* SladerChallenge.app */,
+				B3BE8D5C20F02C9500182BB4 /* SladerChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3BE8D4A20F02C9500182BB4 /* SladerChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B3DEF80E20F15636004D5AD5 /* Vendor */,
+				B3BE8D6C20F1235B00182BB4 /* Assets */,
+				B3BE8D4B20F02C9500182BB4 /* AppDelegate.swift */,
+				B3BE8D4D20F02C9500182BB4 /* ViewController.swift */,
+				B3BE8D4F20F02C9500182BB4 /* Main.storyboard */,
+				B3BE8D5220F02C9500182BB4 /* Assets.xcassets */,
+				B3BE8D5420F02C9500182BB4 /* LaunchScreen.storyboard */,
+				B3BE8D5720F02C9500182BB4 /* Info.plist */,
+			);
+			path = SladerChallenge;
+			sourceTree = "<group>";
+		};
+		B3BE8D5F20F02C9500182BB4 /* SladerChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE8D6020F02C9500182BB4 /* SladerChallengeTests.swift */,
+				B3BE8D6220F02C9500182BB4 /* Info.plist */,
+			);
+			path = SladerChallengeTests;
+			sourceTree = "<group>";
+		};
+		B3BE8D6C20F1235B00182BB4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE8D6D20F1236A00182BB4 /* example_books.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B3DEF80E20F15636004D5AD5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B3DEF80F20F15641004D5AD5 /* GradientView.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3BE8D4720F02C9500182BB4 /* SladerChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3BE8D6520F02C9500182BB4 /* Build configuration list for PBXNativeTarget "SladerChallenge" */;
+			buildPhases = (
+				6A41AA8F5A41F2D703E21F96 /* [CP] Check Pods Manifest.lock */,
+				B3BE8D4420F02C9500182BB4 /* Sources */,
+				B3BE8D4520F02C9500182BB4 /* Frameworks */,
+				B3BE8D4620F02C9500182BB4 /* Resources */,
+				9614A4D3D998BB21BA259F2C /* [CP] Embed Pods Frameworks */,
+				B403E3466C684D556887A71D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SladerChallenge;
+			productName = SladerChallenge;
+			productReference = B3BE8D4820F02C9500182BB4 /* SladerChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3BE8D5B20F02C9500182BB4 /* SladerChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3BE8D6820F02C9500182BB4 /* Build configuration list for PBXNativeTarget "SladerChallengeTests" */;
+			buildPhases = (
+				6F45A736D9464AA290DFA00B /* [CP] Check Pods Manifest.lock */,
+				B3BE8D5820F02C9500182BB4 /* Sources */,
+				B3BE8D5920F02C9500182BB4 /* Frameworks */,
+				B3BE8D5A20F02C9500182BB4 /* Resources */,
+				5326094FCD560A0A5C5D43F3 /* [CP] Embed Pods Frameworks */,
+				A6369E0CA5F729491EC53FD4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3BE8D5E20F02C9500182BB4 /* PBXTargetDependency */,
+			);
+			name = SladerChallengeTests;
+			productName = SladerChallengeTests;
+			productReference = B3BE8D5C20F02C9500182BB4 /* SladerChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3BE8D4020F02C9500182BB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Super Art Software";
+				TargetAttributes = {
+					B3BE8D4720F02C9500182BB4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B3BE8D5B20F02C9500182BB4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B3BE8D4720F02C9500182BB4;
+					};
+				};
+			};
+			buildConfigurationList = B3BE8D4320F02C9500182BB4 /* Build configuration list for PBXProject "SladerChallenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3BE8D3F20F02C9500182BB4;
+			productRefGroup = B3BE8D4920F02C9500182BB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3BE8D4720F02C9500182BB4 /* SladerChallenge */,
+				B3BE8D5B20F02C9500182BB4 /* SladerChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3BE8D4620F02C9500182BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BE8D5620F02C9500182BB4 /* LaunchScreen.storyboard in Resources */,
+				B3BE8D5320F02C9500182BB4 /* Assets.xcassets in Resources */,
+				B3BE8D5120F02C9500182BB4 /* Main.storyboard in Resources */,
+				B3BE8D6E20F1236A00182BB4 /* example_books.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BE8D5A20F02C9500182BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5326094FCD560A0A5C5D43F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A41AA8F5A41F2D703E21F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F45A736D9464AA290DFA00B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9614A4D3D998BB21BA259F2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SladerChallenge/Pods-SladerChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6369E0CA5F729491EC53FD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B403E3466C684D556887A71D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SladerChallenge/Pods-SladerChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3BE8D4420F02C9500182BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BE8D4E20F02C9500182BB4 /* ViewController.swift in Sources */,
+				B3BE8D4C20F02C9500182BB4 /* AppDelegate.swift in Sources */,
+				B3DEF81020F15641004D5AD5 /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BE8D5820F02C9500182BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BE8D6120F02C9500182BB4 /* SladerChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3BE8D5E20F02C9500182BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3BE8D4720F02C9500182BB4 /* SladerChallenge */;
+			targetProxy = B3BE8D5D20F02C9500182BB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3BE8D4F20F02C9500182BB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3BE8D5020F02C9500182BB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3BE8D5420F02C9500182BB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3BE8D5520F02C9500182BB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3BE8D6320F02C9500182BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3BE8D6420F02C9500182BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3BE8D6620F02C9500182BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A088BB51D91FA9A493C2A03 /* Pods-SladerChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKGR9TT483;
+				INFOPLIST_FILE = SladerChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = superarts.org.SladerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3BE8D6720F02C9500182BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7150DF6FD284D294E202C08 /* Pods-SladerChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKGR9TT483;
+				INFOPLIST_FILE = SladerChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = superarts.org.SladerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3BE8D6920F02C9500182BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED155D4B4ADC35715B2ED764 /* Pods-SladerChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKGR9TT483;
+				INFOPLIST_FILE = SladerChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = superarts.org.SladerChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SladerChallenge.app/SladerChallenge";
+			};
+			name = Debug;
+		};
+		B3BE8D6A20F02C9500182BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB2911B092C88AE92CA92D4 /* Pods-SladerChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKGR9TT483;
+				INFOPLIST_FILE = SladerChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = superarts.org.SladerChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SladerChallenge.app/SladerChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3BE8D4320F02C9500182BB4 /* Build configuration list for PBXProject "SladerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BE8D6320F02C9500182BB4 /* Debug */,
+				B3BE8D6420F02C9500182BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3BE8D6520F02C9500182BB4 /* Build configuration list for PBXNativeTarget "SladerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BE8D6620F02C9500182BB4 /* Debug */,
+				B3BE8D6720F02C9500182BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3BE8D6820F02C9500182BB4 /* Build configuration list for PBXNativeTarget "SladerChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BE8D6920F02C9500182BB4 /* Debug */,
+				B3BE8D6A20F02C9500182BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3BE8D4020F02C9500182BB4 /* Project object */;
+}

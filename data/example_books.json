@@ -1,0 +1,34 @@
+{  
+   "books":[  
+      {  
+         "title":"Biology: How Life Works",
+         "isbn":"9781319056919",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/41kMdcJ2BjIL._SX419_BO1204203200_.jpg"
+      },
+      {  
+         "title":"Calculus",
+         "isbn":"9781285057095",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/9781285057095.jpg"
+      },
+      {  
+         "title":"How to Prove It: A Structured Approach",
+         "isbn":"9780521861243",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/41C2hC8mzPL._SX310_BO1204203200_.jpg"
+      },
+      {  
+         "title":"How Things Work: The Physics of Everyday Life",
+         "isbn":"9780470223994",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/518nrR-p4WL._SX369_BO1204203200_.jpg"
+      },
+      {  
+         "title":"Advanced Mathematics: Precalculus with Discrete Mathematics and Data Analysis",
+         "isbn":"9780395551899",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/9780395551899.jpg"
+      },
+      {  
+         "title":"Probability and Statistical Inference",
+         "isbn":"9780321923271",
+         "coverImageUrl:":"https://d37b4ew8393wk3.cloudfront.net/textbook_covers/Probability_and_Statistical_Inference.jpg"
+      }
+   ]
+}
