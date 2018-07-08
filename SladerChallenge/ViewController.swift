@@ -31,6 +31,10 @@ class HomeViewController: UIViewController {
 			bookCollectionManager.selectHandler = { book in
 				self.showAlert(message: "Book selected: \(book.title)")
 			}
+			bookCollectionManager.deleteHandler = { book, indexPath in
+				self.bookCollectionManager.books = self.bookCollectionManager.books.filter { $0 != book }
+				self.bookCollectionView.reloadData()
+			}
         }
 
 		tabCollectionView.delegate = tabCollectionManager
@@ -98,6 +102,12 @@ struct BookModel: Decodable {
 	}
 }
 
+extension BookModel: Equatable {
+	static func == (lhs: BookModel, rhs: BookModel) -> Bool {
+		return lhs.isbn == rhs.isbn
+	}
+}
+
 //	Wrapper model to handle response JSON
 struct BooksResponseModel: Decodable {
 	var books: [BookModel]
@@ -106,6 +116,7 @@ struct BooksResponseModel: Decodable {
 class BookCollectionManager: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
 	public var selectHandler: ((BookModel) -> Void)?
+	public var deleteHandler: ((BookModel, IndexPath) -> Void)?
 	public var books = [BookModel]()
 
 	private let rowMax = 3
@@ -122,6 +133,9 @@ extension BookCollectionManager {
 		cell.coverImage.sd_setImage(with: URL(string: book.coverImageURL), placeholderImage: UIImage(named: "default_book_thumbnail.png"))
 		cell.coverImage.layer.cornerRadius = 5
 		cell.coverImage.clipsToBounds = true
+		cell.deleteHandler = {
+			self.deleteHandler?(book, indexPath)
+		}
 
         return cell
     }
@@ -152,9 +166,61 @@ extension BookCollectionManager {
 }
 
 class BookCell: UICollectionViewCell {
+
 	@IBOutlet var titleLabel: UILabel!
 	@IBOutlet var isbnLabel: UILabel!
 	@IBOutlet var coverImage: UIImageView!
+	@IBOutlet var longPressView: UIView!
+
+	public var deleteHandler: (() -> Void)?
+
+	private var longPressGesture: UILongPressGestureRecognizer!
+	private let wiggleAnimation = CAKeyframeAnimation()
+	private var isAnimating = false
+
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		setupGesture()
+		setupAnimation()
+	}
+
+	private func setupGesture() {
+		longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(onLongPress(_:)))
+		self.addGestureRecognizer(longPressGesture)
+	}
+
+	private func setupAnimation() {
+		let force: CGFloat = 0.5
+		wiggleAnimation.keyPath = "transform.rotation"
+		wiggleAnimation.values = [0, 0.1*force, -0.1*force, 0.1*force, 0]
+		wiggleAnimation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
+		wiggleAnimation.duration = CFTimeInterval(1)
+		wiggleAnimation.repeatCount = .infinity
+		wiggleAnimation.beginTime = CACurrentMediaTime()
+	}
+
+	@objc func onLongPress(_ gesture: UIPanGestureRecognizer) {
+		if !isAnimating {
+			isAnimating = true
+			layer.add(wiggleAnimation, forKey: "wiggle")
+			UIView.animate(withDuration: 0.3, animations: {
+				self.longPressView.alpha = 1
+			})
+		}
+	}
+
+	@IBAction func actionDismiss() {
+		layer.removeAllAnimations()
+		isAnimating = false
+		UIView.animate(withDuration: 0.3, animations: {
+			self.longPressView.alpha = 0
+		})
+	}
+
+	@IBAction func actionDelete() {
+		longPressView.alpha = 0
+		deleteHandler?()
+	}
 }
 
 class TabCollectionManager: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

@@ -80,6 +80,40 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_book_thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-Kn-acC">
                                                     <rect key="frame" x="0.0" y="10" width="123" height="130"/>
                                                 </imageView>
+                                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOa-EX-9h3">
+                                                    <rect key="frame" x="0.0" y="10" width="123" height="130"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upf-Ty-D86">
+                                                            <rect key="frame" x="0.0" y="0.0" width="123" height="65"/>
+                                                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="24"/>
+                                                            <state key="normal" title="Dismiss"/>
+                                                            <connections>
+                                                                <action selector="actionDismiss" destination="4Ny-op-JvW" eventType="touchUpInside" id="3WI-g2-f23"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSV-qg-463">
+                                                            <rect key="frame" x="0.0" y="65" width="123" height="65"/>
+                                                            <color key="backgroundColor" red="1" green="0.37080184083218093" blue="0.28433804651969408" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="24"/>
+                                                            <state key="normal" title="Delete"/>
+                                                            <connections>
+                                                                <action selector="actionDelete" destination="4Ny-op-JvW" eventType="touchUpInside" id="inf-fo-4nK"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="upf-Ty-D86" secondAttribute="trailing" id="761-Mw-dzi"/>
+                                                        <constraint firstItem="eSV-qg-463" firstAttribute="leading" secondItem="BOa-EX-9h3" secondAttribute="leading" id="Auc-Zp-fV8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eSV-qg-463" secondAttribute="bottom" id="D5a-1e-Ubw"/>
+                                                        <constraint firstItem="eSV-qg-463" firstAttribute="height" secondItem="upf-Ty-D86" secondAttribute="height" id="J8F-UY-diT"/>
+                                                        <constraint firstItem="upf-Ty-D86" firstAttribute="leading" secondItem="BOa-EX-9h3" secondAttribute="leading" id="mcL-5R-Du9"/>
+                                                        <constraint firstItem="upf-Ty-D86" firstAttribute="top" secondItem="BOa-EX-9h3" secondAttribute="top" id="nfP-6n-wMl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="eSV-qg-463" secondAttribute="trailing" id="pcd-6z-9aD"/>
+                                                        <constraint firstItem="eSV-qg-463" firstAttribute="top" secondItem="upf-Ty-D86" secondAttribute="bottom" id="szy-24-xxO"/>
+                                                    </constraints>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFU-bc-kKX">
                                                     <rect key="frame" x="0.0" y="146" width="123" height="36"/>
                                                     <constraints>
@@ -105,12 +139,16 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="zhl-dK-qkV" firstAttribute="top" secondItem="RFU-bc-kKX" secondAttribute="bottom" constant="6" id="1hf-HU-RQE"/>
+                                            <constraint firstItem="BOa-EX-9h3" firstAttribute="trailing" secondItem="WF1-Kn-acC" secondAttribute="trailing" id="31T-Fk-ByI"/>
                                             <constraint firstItem="RFU-bc-kKX" firstAttribute="leading" secondItem="4Ny-op-JvW" secondAttribute="leading" id="GCA-5F-fM8"/>
                                             <constraint firstItem="WF1-Kn-acC" firstAttribute="leading" secondItem="4Ny-op-JvW" secondAttribute="leading" id="Gbw-9W-9oe"/>
                                             <constraint firstAttribute="trailing" secondItem="WF1-Kn-acC" secondAttribute="trailing" id="Gwx-0s-knN"/>
                                             <constraint firstItem="RFU-bc-kKX" firstAttribute="top" secondItem="WF1-Kn-acC" secondAttribute="bottom" constant="6" id="IVq-RS-O9H"/>
                                             <constraint firstAttribute="bottom" secondItem="zhl-dK-qkV" secondAttribute="bottom" id="XFH-I9-J5z"/>
+                                            <constraint firstItem="BOa-EX-9h3" firstAttribute="leading" secondItem="WF1-Kn-acC" secondAttribute="leading" id="YFm-tI-BdE"/>
                                             <constraint firstAttribute="trailing" secondItem="RFU-bc-kKX" secondAttribute="trailing" id="ceN-Xi-lpe"/>
+                                            <constraint firstItem="BOa-EX-9h3" firstAttribute="top" secondItem="WF1-Kn-acC" secondAttribute="top" id="eE5-2w-CdN"/>
+                                            <constraint firstItem="BOa-EX-9h3" firstAttribute="bottom" secondItem="WF1-Kn-acC" secondAttribute="bottom" id="iIq-gN-fHA"/>
                                             <constraint firstItem="WF1-Kn-acC" firstAttribute="top" secondItem="4Ny-op-JvW" secondAttribute="top" constant="10" id="juL-SM-8hy"/>
                                             <constraint firstItem="zhl-dK-qkV" firstAttribute="leading" secondItem="4Ny-op-JvW" secondAttribute="leading" id="rmx-05-HiE"/>
                                             <constraint firstAttribute="trailing" secondItem="zhl-dK-qkV" secondAttribute="trailing" id="yS1-cX-uBr"/>
@@ -118,6 +156,7 @@
                                         <connections>
                                             <outlet property="coverImage" destination="WF1-Kn-acC" id="lhR-mZ-Mb0"/>
                                             <outlet property="isbnLabel" destination="zhl-dK-qkV" id="JbG-vq-3tC"/>
+                                            <outlet property="longPressView" destination="BOa-EX-9h3" id="7Qk-M7-fxO"/>
                                             <outlet property="titleLabel" destination="RFU-bc-kKX" id="pyL-XY-vrH"/>
                                         </connections>
                                     </collectionViewCell>
