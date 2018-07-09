@@ -41,3 +41,7 @@ Also, protocols are widely used as interfaces. In theory all non UI modules shou
 ## Vendor library
 
 `GradientView` has been added to implement shadow effect on top of tab bar in `HomeViewController`. It's fully `@IBInspectable`.
+
+## Unit tests
+
+To-do.

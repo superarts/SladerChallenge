@@ -17,6 +17,7 @@
 		B326EE4920F2E335003E78E0 /* TabCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326EE4820F2E335003E78E0 /* TabCollectionManager.swift */; };
 		B326EE4D20F2E373003E78E0 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326EE4C20F2E373003E78E0 /* BookCell.swift */; };
 		B326EE4F20F2E38A003E78E0 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326EE4E20F2E38A003E78E0 /* TabCell.swift */; };
+		B326EE5120F2E8A2003E78E0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326EE5020F2E8A2003E78E0 /* GradientView.swift */; };
 		B3BE8D4C20F02C9500182BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D4B20F02C9500182BB4 /* AppDelegate.swift */; };
 		B3BE8D4E20F02C9500182BB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D4D20F02C9500182BB4 /* HomeViewController.swift */; };
 		B3BE8D5120F02C9500182BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D4F20F02C9500182BB4 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		B3BE8D5620F02C9500182BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D5420F02C9500182BB4 /* LaunchScreen.storyboard */; };
 		B3BE8D6120F02C9500182BB4 /* SladerChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE8D6020F02C9500182BB4 /* SladerChallengeTests.swift */; };
 		B3BE8D6E20F1236A00182BB4 /* example_books.json in Resources */ = {isa = PBXBuildFile; fileRef = B3BE8D6D20F1236A00182BB4 /* example_books.json */; };
-		B3DEF81020F15641004D5AD5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEF80F20F15641004D5AD5 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,7 @@
 		B326EE4820F2E335003E78E0 /* TabCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionManager.swift; sourceTree = "<group>"; };
 		B326EE4C20F2E373003E78E0 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		B326EE4E20F2E38A003E78E0 /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		B326EE5020F2E8A2003E78E0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B3BE8D4820F02C9500182BB4 /* SladerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SladerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BE8D4B20F02C9500182BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BE8D4D20F02C9500182BB4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		B3BE8D6020F02C9500182BB4 /* SladerChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SladerChallengeTests.swift; sourceTree = "<group>"; };
 		B3BE8D6220F02C9500182BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3BE8D6D20F1236A00182BB4 /* example_books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_books.json; sourceTree = "<group>"; };
-		B3DEF80F20F15641004D5AD5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../../../../../GradientView.swift; sourceTree = "<group>"; };
 		B7150DF6FD284D294E202C08 /* Pods-SladerChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallenge/Pods-SladerChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		CFB2911B092C88AE92CA92D4 /* Pods-SladerChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED155D4B4ADC35715B2ED764 /* Pods-SladerChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SladerChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SladerChallengeTests/Pods-SladerChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		B3DEF80E20F15636004D5AD5 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				B3DEF80F20F15641004D5AD5 /* GradientView.swift */,
+				B326EE5020F2E8A2003E78E0 /* GradientView.swift */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -427,6 +427,7 @@
 			files = (
 				B326EE4720F2E301003E78E0 /* BookCollectionManager.swift in Sources */,
 				B326EE4220F2E292003E78E0 /* BookModel.swift in Sources */,
+				B326EE5120F2E8A2003E78E0 /* GradientView.swift in Sources */,
 				B326EE3D20F2E21D003E78E0 /* DependencyManager.swift in Sources */,
 				B326EE4F20F2E38A003E78E0 /* TabCell.swift in Sources */,
 				B3BE8D4E20F02C9500182BB4 /* HomeViewController.swift in Sources */,
@@ -435,7 +436,6 @@
 				B326EE3F20F2E241003E78E0 /* BookManager.swift in Sources */,
 				B326EE4920F2E335003E78E0 /* TabCollectionManager.swift in Sources */,
 				B326EE4420F2E2D1003E78E0 /* BooksResponseModel.swift in Sources */,
-				B3DEF81020F15641004D5AD5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
