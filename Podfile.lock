@@ -1,14 +1,23 @@
 PODS:
+  - Dip (6.0)
+  - ReactiveSwift (3.1.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
 
 DEPENDENCIES:
+  - Dip (= 6.0)
+  - ReactiveSwift
   - SDWebImage
 
 SPEC CHECKSUMS:
+  Dip: 316ad036509eaf3ef78e19699f32a9e01a5b3c3e
+  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
 
-PODFILE CHECKSUM: a6cbfd870e9ab242922910a6269fc42e2df4566c
+PODFILE CHECKSUM: dc4294c9533295335a29ba4420325e2b55042224
 
 COCOAPODS: 1.2.1

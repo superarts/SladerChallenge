@@ -263,7 +263,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="NkL-rr-2GR">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title=" " id="vIc-Bp-6Ih"/>
                         <view key="titleView" contentMode="scaleToFill" id="AHb-2C-9m7">
                             <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -275,7 +274,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="s3O-XZ-ZqU">
+                        <barButtonItem key="rightBarButtonItem" id="s3O-XZ-ZqU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVl-j8-2Qq">
                                 <rect key="frame" x="322" y="3.5" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
